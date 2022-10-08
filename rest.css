@@ -1,0 +1,411 @@
+.body {
+    margin: 0;
+    font-family: Roboto,sans-serif;
+}
+
+/* partie header début */
+.header {
+    padding: 16px;
+
+}
+.headerwrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.fa-arrow-left {
+    
+    margin-left: 32px;
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    display: flex;
+    align-items: center;
+    
+    
+    font-size: 24px;
+    color: #000;
+}
+
+
+.headerlogo {
+    height: 40px;
+    
+}
+
+
+
+/* partie header fin */
+/* ----------------- */
+/* ----------------- */
+/* ----------------- */
+/* partie main début */
+.headerimg {
+    max-width: 100%;
+    max-height: 512px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.menuwrapper {
+    margin-top: -64px;
+    border-radius: 32px 32px 0 0;
+    background-color: #f6f6f6;
+    position: relative;
+}
+
+.menurest {
+    padding: 16px 32px 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_btn {
+    height: 32px;
+    width: 32px;
+    border: 0 solid transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+
+
+.menu_btn::before , .menu_heart{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.menu_heart_s:hover {
+    opacity: 1;
+    transition-duration: .5s;
+}
+
+.fa-heart{
+    
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.menu_heart_s {
+    
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    z-index: 1;
+}
+
+.menuwrapperorder {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 16px;
+
+}
+
+.menulist {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 16px;
+}
+
+.menulisttitle{
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 8px;
+    font-weight: 400;
+}
+
+.menulisttitle::after {
+    content: "";
+    width: 48px;
+    height: 4px;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.menumealwrapper {
+    background-color: #fff;
+    padding: 16px;
+    display: flex;
+    border-radius: 12px;
+    margin: 16px 0;
+    box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
+    overflow: hidden;  
+    max-width: 100%;
+    animation: appear 1s;
+    animation-fill-mode: both;
+}
+
+.menumeal {
+    flex: 1;
+    
+}
+
+.menutitle {
+    font-family: 'Shrikhand', cursive;
+}
+
+.menumealtitle, .menumealdesc {
+    margin: 0;
+}
+
+.menumeal, .menumealtitle, .menumealdesc {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+
+.menumealprice {
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 8px;
+    font-size: 18px;
+    margin: 0;
+}
+
+.menuconfirmation {
+    background-color: #99e2d0;
+    margin: -16px -80px -16px 16px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .5s;
+}
+
+.menuwrapicon {
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: .5s;
+}
+
+.fa-circle-check{
+    color: #99e2d0;
+    font-size: 28px;
+}
+
+.menubtnwrap {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 48px 0;
+}
+
+.menubtn {
+    border: 0;
+    padding: 12px 24px;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #686868;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    transition-duration: .25s;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
+    cursor: pointer;
+}
+
+/* partie main fin */
+/* ----------------- */
+/* ----------------- */
+/* ----------------- */
+/* partie footer début */
+
+.footer {
+    
+    background-color: rgb(53, 53, 53);
+    display: flex;
+    flex-direction: column;
+    padding-left: 110px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.footerlogo {
+    color: rgb(255, 255, 255);
+    font-family: 'Shrikhand', cursive;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.footerrest {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: #fff;
+}
+
+.footerrestb {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerrest:hover {
+    text-decoration: underline;
+}
+
+.footerrestb:hover {
+    text-decoration: underline;
+}
+
+.fa-utensils {
+    color: rgb(255, 255, 255);
+    margin-right: 8px;
+}
+
+.fa-handshake-angle {
+    color: rgb(255, 255, 255);
+    margin-right: 4px;
+}
+
+.footertext {
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    margin-left: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* partie footer fin */
+/* ***************** */
+/* ***************** */
+/* partie animation */
+
+.menumealwrapper:hover .menuconfirmation{
+    margin-right: -16;
+}
+
+.menumealwrapper:hover .fa-circle-check{
+    transition: transform 500ms ease-in-out;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.menubtn:hover {
+
+    background-color: #fff;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
+}
+
+/* Delay animation */
+
+
+
+
+
+@keyframes appear {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.delaye1 {
+    animation-delay: 100ms;
+}
+
+.delaye2 {
+    animation-delay: 200ms;
+}
+
+.delaye3 {
+    animation-delay: 300ms;
+}
+
+.delaye4 {
+    animation-delay: 400ms;
+}
+
+.delayp1 {
+    animation-delay: 500ms;
+}
+
+.delayp2 {
+    animation-delay: 600ms;
+}
+
+.delayp3 {
+    animation-delay: 700ms;
+}
+
+.delayd1 {
+    animation-delay: 800ms;
+}
+
+.delayd2 {
+    animation-delay: 900ms;
+}
+
+.delayd3 {
+    animation-delay: 1000ms;
+}
+
+/* partie responsive */
+
+/* responsive tablette */
+
+@media (max-width:992px) {
+    
+    .footer {
+        padding-left: 20px;
+    }
+
+}
+
+/* responsive téléphone */
+
+@media (max-width:778px) {
+
+    .menuwrapperorder{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    
+    .footer {
+        padding-left: 20px;
+    }
+
+    .fa-arrow-left {
+        left: 0px;
+    }
+
+}
+
