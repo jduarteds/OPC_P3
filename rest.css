@@ -222,6 +222,7 @@
     text-decoration: none;
     justify-content: center;
     padding: 48px 0;
+    background-color: #f6f6f6;
 }
 
 .menubtn {
@@ -302,13 +303,30 @@
     margin-bottom: 2px;
 }
 
+.fonctionwrapper2 {
+    counter-reset: compteListe 0;
+    
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.fonctionwrapper2_b {
+    display: flex;
+    align-items: center;
+    
+    margin-left: 10px;
+}
+
 /* partie footer fin */
 /* ***************** */
 /* ***************** */
 /* partie animation */
 
 .menumealwrapper:hover .menuconfirmation{
-    margin-right: -16;
+    margin-right: -16px;
 }
 
 .menumealwrapper:hover .fa-circle-check{
@@ -388,6 +406,9 @@
         padding-left: 20px;
     }
 
+    .menuwrapperorder{
+    grid-template-columns: repeat(1,1fr);
+    }
 }
 
 /* responsive téléphone */

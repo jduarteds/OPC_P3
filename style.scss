@@ -13,6 +13,13 @@
     align-items: center;
 }
 
+.headersect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .headerlogo {
     height: 40px;
     margin-top: 25px;
@@ -42,7 +49,7 @@
 
 .fa-location-dot{
     margin-right: 16px;
-    font-size: 900;
+    font-size: 20px;
     color: black;
 }
 
@@ -122,6 +129,23 @@
    
 }
 
+.fonctionwrapper2 {
+    counter-reset: compteListe 0;
+    
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.fonctionwrapper2_b {
+    display: flex;
+    align-items: center;
+    
+    margin-left: 10px;
+}
+
 .fonctionmenu {
     box-shadow: rgba(0, 0, 0, 0.125) 2px 2px 4px;
     background-color: rgb(246, 246, 246);
@@ -161,19 +185,19 @@
 
 .fa-mobile-screen-button {
     margin-right: 16px;
-    font-size: 900;
+    font-size: 20px;
     color: rgb(126, 126, 126);
 }
 
 .fa-list-ul {
     margin-right: 16px;
-    font-size: 900;
+    font-size: 20px;
     color: rgb(126, 126, 126);
 }
 
 .fa-store {
     margin-right: 16px;
-    font-size: 900;
+    font-size: 20px;
     color: rgb(126, 126, 126);
 }
 
@@ -373,6 +397,7 @@
 .footerrestb {
     color: #fff;
     text-decoration: none;
+    
     &:hover {
         text-decoration: underline;
     }
