@@ -169,7 +169,13 @@
     font-family: 'Shrikhand', cursive;
 }
 
-.menumealtitle, .menumealdesc {
+.menumealdesc {
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.menumealtitle {
     margin: 0;
 }
 
@@ -186,7 +192,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-left: 8px;
-    font-size: 18px;
+    font-size: 14px;
     margin: 0;
 }
 
